@@ -10,26 +10,27 @@ def index():
 def menu():
     return render_template("menu.html")  
 
-@app.get("/")
+@app.get("/mocarella/")
 def mocarella():
     return("mocarella.html")
 
-@app.get("/")
+@app.get("/cheez/")
 def cheez():
     return("cheez.html")
 
-@app.get("/")
+@app.get("/karbonara/")
 def karbonara():
     return("karbonara.html")
 
-@app.get("/")
+@app.get("/pizza and awocado/")
 def pizza_and_awocado():
     return("pizza and awocado.html")
 
-@app.get("/")
+@app.get("/pizza pasta/")
 def pizza_pasta():
     return("pizza pasta.html")
 
     return render_template("")
+
 if __name__ == "__main__":
     app.run(debug=True)
